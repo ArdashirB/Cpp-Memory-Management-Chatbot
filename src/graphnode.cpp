@@ -11,7 +11,9 @@ GraphNode::~GraphNode()
     //// STUDENT CODE
     ////
 
-    delete _chatBot; 
+    //Delete called twice, changing to default
+    //was causing the 1st segfault when closing the window
+    //delete _chatBot; 
 
     ////
     //// EOF STUDENT CODE
